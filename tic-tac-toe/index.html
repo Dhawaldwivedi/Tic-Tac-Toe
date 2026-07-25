@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tic Tac Toe</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main class="app">
+  <header class="app__header">
+    <h1 class="title">Tic <span class="title__accent">Tac</span> Toe</h1>
+    <p class="status" id="status">
+      Player <span class="mark-text mark-text--x">X</span>'s turn
+    </p>
+  </header>
+
+  <section class="scoreboard" aria-label="Scoreboard">
+    <div class="score-card score-card--x">
+      <span class="score-card__label">Player X</span>
+      <span class="score-card__value" id="scoreX">0</span>
+    </div>
+    <div class="score-card score-card--draw">
+      <span class="score-card__label">Draws</span>
+      <span class="score-card__value" id="scoreDraw">0</span>
+    </div>
+    <div class="score-card score-card--o">
+      <span class="score-card__label">Player O</span>
+      <span class="score-card__value" id="scoreO">0</span>
+    </div>
+  </section>
+
+  <p class="streak" id="streak" hidden></p>
+
+  <section class="board" id="board" aria-label="Tic Tac Toe board">
+    <button class="cell" data-index="0" aria-label="Row 1, Column 1"></button>
+    <button class="cell" data-index="1" aria-label="Row 1, Column 2"></button>
+    <button class="cell" data-index="2" aria-label="Row 1, Column 3"></button>
+    <button class="cell" data-index="3" aria-label="Row 2, Column 1"></button>
+    <button class="cell" data-index="4" aria-label="Row 2, Column 2"></button>
+    <button class="cell" data-index="5" aria-label="Row 2, Column 3"></button>
+    <button class="cell" data-index="6" aria-label="Row 3, Column 1"></button>
+    <button class="cell" data-index="7" aria-label="Row 3, Column 2"></button>
+    <button class="cell" data-index="8" aria-label="Row 3, Column 3"></button>
+  </section>
+
+  <section class="controls">
+    <button class="btn btn--primary" id="newRoundBtn">New Round</button>
+    <button class="btn btn--ghost" id="resetAllBtn">Reset All</button>
+  </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
